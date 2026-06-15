@@ -17,8 +17,8 @@ import pandas as pd
 from pathlib import Path
 
 RAW_PATH    = Path("data/raw/cd_series_manual.json")
-OUT_JSON    = Path("data/processed/chunks_clean.json")
-OUT_CSV     = Path("data/processed/chunks_df.csv")
+OUT_JSON    = Path("data/clean/chunks_clean.json")
+OUT_CSV     = Path("data/clean/chunks_df.csv")
 MIN_TOKENS  = 20   # chunk dengan estimasi token < ini dianggap terlalu pendek
 
 # ── 1. Load ───────────────────────────────────────────────────────────────────
