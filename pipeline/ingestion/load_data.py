@@ -1,57 +1,47 @@
-"""
-Load & validasi cd_series_manual.json
-Output: ringkasan dataset ke console
-"""
-
+# pipeline/ingestion/load_data.py
 import json
-import os
+from pathlib import Path
 
-RAW_PATH = "data/raw/cd_series_manual.json"
+RAW_DIR = Path("data/raw")
 
-def load_json(path: str) -> dict:
+def load_and_validate(path: Path) -> int:
     with open(path, "r", encoding="utf-8") as f:
         data = json.load(f)
-    return data
 
-def validate_structure(data: dict):
-    """Cek apakah JSON punya key yang diharapkan."""
-    assert "dataset_meta" in data, "Key 'dataset_meta' tidak ditemukan!"
-    assert "chunks" in data, "Key 'chunks' tidak ditemukan!"
-
-    meta = data["dataset_meta"]
+    assert "chunks" in data, f"'chunks' tidak ditemukan di {path.name}!"
+    meta   = data.get("dataset_meta", {})
     chunks = data["chunks"]
 
-    print("=" * 50)
-    print("DATASET META")
-    print("=" * 50)
-    print(f"  Nama      : {meta.get('name')}")
-    print(f"  Series    : {meta.get('series')}")
-    print(f"  Versi     : {meta.get('version')}")
-    print(f"  Tanggal   : {meta.get('processed_date')}")
-    print(f"  Total chunk (meta): {meta.get('total_chunks')}")
-    print(f"  Total chunk (aktual): {len(chunks)}")
-    print()
-
-    # Cek field wajib tiap chunk
-    required_fields = ["chunk_id", "category", "sub_category", "chapter",
-                       "page", "fault_code", "user_role", "keywords", "text"]
-    missing_report = {}
+    required_fields = ["chunk_id", "category", "sub_category", "text", "keywords", "user_role"]
+    missing = {}
     for chunk in chunks:
         for field in required_fields:
             if field not in chunk:
-                missing_report.setdefault(field, 0)
-                missing_report[field] += 1
+                missing.setdefault(field, 0)
+                missing[field] += 1
 
-    if missing_report:
-        print("⚠️  Field yang hilang di beberapa chunk:")
-        for field, count in missing_report.items():
-            print(f"    {field}: {count} chunk")
+    print(f"\n{'='*50}")
+    print(f"FILE  : {path.name}")
+    print(f"{'='*50}")
+    print(f"  Nama    : {meta.get('name', '-')}")
+    print(f"  Series  : {meta.get('truck_model') or meta.get('series', '-')}")
+    print(f"  Versi   : {meta.get('version', '-')}")
+    print(f"  Chunks  : {len(chunks)} (meta: {meta.get('total_chunks', '?')})")
+    print(f"  Bahasa  : {meta.get('language', '-')}")
+
+    if missing:
+        print(f"  ⚠️  Field hilang: {missing}")
     else:
-        print("✅ Semua field wajib ada di setiap chunk.")
+        print(f"  ✅ Semua field wajib lengkap")
 
-    return chunks
+    return len(chunks)
 
 if __name__ == "__main__":
-    data = load_json(RAW_PATH)
-    chunks = validate_structure(data)
-    print(f"\nSelesai. {len(chunks)} chunk siap diproses.")
+    json_files = sorted(RAW_DIR.glob("*.json"))
+    if not json_files:
+        print("⚠️  Tidak ada file JSON di data/raw/")
+    else:
+        total = 0
+        for path in json_files:
+            total += load_and_validate(path)
+        print(f"\n✅ Total: {len(json_files)} file, {total} chunk siap diproses.")
