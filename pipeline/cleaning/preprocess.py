@@ -10,9 +10,7 @@ import pandas as pd
 from pathlib import Path
 
 # ── CONFIG ────────────────────────────────────────────────────────────────────
-RAW_FILES = [
-    RAW_FILES = sorted(Path("data/raw").glob("*.json"))
-]
+RAW_FILES = sorted(Path("data/raw").glob("*.json"))
 OUT_JSON   = Path("data/clean/chunks_clean.json")
 OUT_CSV    = Path("data/clean/chunks_df.csv")
 MIN_TOKENS = 20

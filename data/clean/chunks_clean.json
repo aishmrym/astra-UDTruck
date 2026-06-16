@@ -1,26 +1,15 @@
 {
-  "dataset_meta": {
-    "name": "UD Trucks RAG KB — CD Series (CD/CW/CG/GK/GW)",
-    "series": "cd_series",
-    "source_type": "owner_manual",
-    "source_doc": "UD Trucks CD Series Owner's Manual",
-    "source_ref": "ManualsLib — https://www.manualslib.com/manual/3498043/Ud-Trucks-Cd-Series.html",
-    "version": "1.0.0",
-    "processed_date": "2026-06-13",
-    "language": "en",
-    "total_chunks": 141,
-    "schema_version": "1.0",
-    "notes": "Full preprocessing of 594-page UD Trucks CD Series Owner's Manual. Covers sub-series: CD (CDB4CA/CDB5CA), CW (CWB4CL/CWB4CA/CWB5CL/CWB5CA), CG (CGB4CL/CGB4CA/CGB5CL/CGB5CA), GK (GKB5CL/GKB5AA), GW (GWB5CL/GWB5CA). Engines: GH8TA, GH11TB/TC/TD. Chunk size ~2 PDF pages (~300-500 tokens). Page references use manual numbering format 'chapter-page' (e.g. 13-33)."
-  },
   "preprocessing": {
-    "total_raw": 141,
-    "total_clean": 141,
-    "total_dropped": 0,
-    "min_tokens": 20
+    "total_clean": 199,
+    "sources": [
+      "cd_series_manual",
+      "croner_series_rag_knowledge_base"
+    ]
   },
   "chunks": [
     {
       "chunk_id": "CDS_PRD_001",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "product",
@@ -53,6 +42,7 @@
     },
     {
       "chunk_id": "CDS_PRD_002",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "product",
@@ -85,6 +75,7 @@
     },
     {
       "chunk_id": "CDS_PRD_003",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "product",
@@ -117,6 +108,7 @@
     },
     {
       "chunk_id": "CDS_PRD_004",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "product",
@@ -149,6 +141,7 @@
     },
     {
       "chunk_id": "CDS_PRD_005",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "product",
@@ -181,6 +174,7 @@
     },
     {
       "chunk_id": "CDS_PRD_006",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "product",
@@ -214,6 +208,7 @@
     },
     {
       "chunk_id": "CDS_PRD_007",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "product",
@@ -247,6 +242,7 @@
     },
     {
       "chunk_id": "CDS_DRV_001",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "driving",
@@ -279,6 +275,7 @@
     },
     {
       "chunk_id": "CDS_DRV_002",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "driving",
@@ -311,6 +308,7 @@
     },
     {
       "chunk_id": "CDS_DRV_003",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "driving",
@@ -343,6 +341,7 @@
     },
     {
       "chunk_id": "CDS_DRV_004",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "driving",
@@ -375,6 +374,7 @@
     },
     {
       "chunk_id": "CDS_DRV_005",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "driving",
@@ -407,6 +407,7 @@
     },
     {
       "chunk_id": "CDS_DRV_006",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "driving",
@@ -439,6 +440,7 @@
     },
     {
       "chunk_id": "CDS_DRV_007",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "driving",
@@ -471,6 +473,7 @@
     },
     {
       "chunk_id": "CDS_DRV_008",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "driving",
@@ -503,6 +506,7 @@
     },
     {
       "chunk_id": "CDS_OPR_001",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -534,6 +538,7 @@
     },
     {
       "chunk_id": "CDS_OPR_002",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -565,6 +570,7 @@
     },
     {
       "chunk_id": "CDS_OPR_003",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -596,6 +602,7 @@
     },
     {
       "chunk_id": "CDS_OPR_004",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -627,6 +634,7 @@
     },
     {
       "chunk_id": "CDS_OPR_005",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -659,6 +667,7 @@
     },
     {
       "chunk_id": "CDS_OPR_006",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -691,6 +700,7 @@
     },
     {
       "chunk_id": "CDS_OPR_007",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -723,6 +733,7 @@
     },
     {
       "chunk_id": "CDS_OPR_008",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -755,6 +766,7 @@
     },
     {
       "chunk_id": "CDS_OPR_009",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -787,6 +799,7 @@
     },
     {
       "chunk_id": "CDS_OPR_010",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -819,6 +832,7 @@
     },
     {
       "chunk_id": "CDS_OPR_011",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -851,6 +865,7 @@
     },
     {
       "chunk_id": "CDS_OPR_012",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -883,6 +898,7 @@
     },
     {
       "chunk_id": "CDS_OPR_013",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -915,6 +931,7 @@
     },
     {
       "chunk_id": "CDS_OPR_014",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -947,6 +964,7 @@
     },
     {
       "chunk_id": "CDS_OPR_015",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -979,6 +997,7 @@
     },
     {
       "chunk_id": "CDS_OPR_016",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -1011,6 +1030,7 @@
     },
     {
       "chunk_id": "CDS_OPR_017",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -1043,6 +1063,7 @@
     },
     {
       "chunk_id": "CDS_OPR_018",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -1075,6 +1096,7 @@
     },
     {
       "chunk_id": "CDS_OPR_019",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -1107,6 +1129,7 @@
     },
     {
       "chunk_id": "CDS_OPR_020",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -1139,6 +1162,7 @@
     },
     {
       "chunk_id": "CDS_OPR_021",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -1171,6 +1195,7 @@
     },
     {
       "chunk_id": "CDS_OPR_022",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -1203,6 +1228,7 @@
     },
     {
       "chunk_id": "CDS_OPR_023",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -1235,6 +1261,7 @@
     },
     {
       "chunk_id": "CDS_OPR_024",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -1267,6 +1294,7 @@
     },
     {
       "chunk_id": "CDS_OPR_025",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -1299,6 +1327,7 @@
     },
     {
       "chunk_id": "CDS_OPR_026",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -1331,6 +1360,7 @@
     },
     {
       "chunk_id": "CDS_OPR_027",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -1363,6 +1393,7 @@
     },
     {
       "chunk_id": "CDS_OPR_028",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -1395,6 +1426,7 @@
     },
     {
       "chunk_id": "CDS_OPR_029",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -1427,6 +1459,7 @@
     },
     {
       "chunk_id": "CDS_OPR_030",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -1459,6 +1492,7 @@
     },
     {
       "chunk_id": "CDS_OPR_031",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -1491,6 +1525,7 @@
     },
     {
       "chunk_id": "CDS_OPR_032",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -1523,6 +1558,7 @@
     },
     {
       "chunk_id": "CDS_OPR_033",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -1555,6 +1591,7 @@
     },
     {
       "chunk_id": "CDS_OPR_034",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -1587,6 +1624,7 @@
     },
     {
       "chunk_id": "CDS_OPR_035",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -1619,6 +1657,7 @@
     },
     {
       "chunk_id": "CDS_OPR_036",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -1651,6 +1690,7 @@
     },
     {
       "chunk_id": "CDS_OPR_037",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -1683,6 +1723,7 @@
     },
     {
       "chunk_id": "CDS_OPR_038",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -1715,6 +1756,7 @@
     },
     {
       "chunk_id": "CDS_OPR_039",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -1747,6 +1789,7 @@
     },
     {
       "chunk_id": "CDS_OPR_040",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -1779,6 +1822,7 @@
     },
     {
       "chunk_id": "CDS_OPR_041",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -1811,6 +1855,7 @@
     },
     {
       "chunk_id": "CDS_OPR_042",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -1843,6 +1888,7 @@
     },
     {
       "chunk_id": "CDS_OPR_043",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -1875,6 +1921,7 @@
     },
     {
       "chunk_id": "CDS_OPR_044",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -1907,6 +1954,7 @@
     },
     {
       "chunk_id": "CDS_OPR_045",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -1939,6 +1987,7 @@
     },
     {
       "chunk_id": "CDS_OPR_046",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -1971,6 +2020,7 @@
     },
     {
       "chunk_id": "CDS_OPR_047",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -2003,6 +2053,7 @@
     },
     {
       "chunk_id": "CDS_OPR_048",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -2035,6 +2086,7 @@
     },
     {
       "chunk_id": "CDS_OPR_049",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -2067,6 +2119,7 @@
     },
     {
       "chunk_id": "CDS_OPR_050",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -2099,6 +2152,7 @@
     },
     {
       "chunk_id": "CDS_OPR_051",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -2131,6 +2185,7 @@
     },
     {
       "chunk_id": "CDS_OPR_052",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -2163,6 +2218,7 @@
     },
     {
       "chunk_id": "CDS_OPR_053",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -2195,6 +2251,7 @@
     },
     {
       "chunk_id": "CDS_OPR_054",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -2227,6 +2284,7 @@
     },
     {
       "chunk_id": "CDS_OPR_055",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -2259,6 +2317,7 @@
     },
     {
       "chunk_id": "CDS_OPR_056",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -2291,6 +2350,7 @@
     },
     {
       "chunk_id": "CDS_OPR_057",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -2323,6 +2383,7 @@
     },
     {
       "chunk_id": "CDS_OPR_058",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -2355,6 +2416,7 @@
     },
     {
       "chunk_id": "CDS_OPR_059",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -2387,6 +2449,7 @@
     },
     {
       "chunk_id": "CDS_OPR_060",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -2419,6 +2482,7 @@
     },
     {
       "chunk_id": "CDS_OPR_061",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -2451,6 +2515,7 @@
     },
     {
       "chunk_id": "CDS_OPR_062",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -2483,6 +2548,7 @@
     },
     {
       "chunk_id": "CDS_OPR_063",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -2515,6 +2581,7 @@
     },
     {
       "chunk_id": "CDS_MNT_001",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "maintenance",
@@ -2547,6 +2614,7 @@
     },
     {
       "chunk_id": "CDS_MNT_002",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "maintenance",
@@ -2579,6 +2647,7 @@
     },
     {
       "chunk_id": "CDS_MNT_003",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "maintenance",
@@ -2611,6 +2680,7 @@
     },
     {
       "chunk_id": "CDS_MNT_004",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "maintenance",
@@ -2643,6 +2713,7 @@
     },
     {
       "chunk_id": "CDS_MNT_005",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "maintenance",
@@ -2675,6 +2746,7 @@
     },
     {
       "chunk_id": "CDS_MNT_006",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "maintenance",
@@ -2707,6 +2779,7 @@
     },
     {
       "chunk_id": "CDS_OPR_064",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -2738,6 +2811,7 @@
     },
     {
       "chunk_id": "CDS_OPR_065",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -2769,6 +2843,7 @@
     },
     {
       "chunk_id": "CDS_OPR_066",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -2800,6 +2875,7 @@
     },
     {
       "chunk_id": "CDS_OPR_067",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -2831,6 +2907,7 @@
     },
     {
       "chunk_id": "CDS_OPR_068",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -2862,6 +2939,7 @@
     },
     {
       "chunk_id": "CDS_OPR_069",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -2893,6 +2971,7 @@
     },
     {
       "chunk_id": "CDS_OPR_070",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -2924,6 +3003,7 @@
     },
     {
       "chunk_id": "CDS_OPR_071",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -2955,6 +3035,7 @@
     },
     {
       "chunk_id": "CDS_OPR_072",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -2986,6 +3067,7 @@
     },
     {
       "chunk_id": "CDS_OPR_073",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -3017,6 +3099,7 @@
     },
     {
       "chunk_id": "CDS_OPR_074",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -3048,6 +3131,7 @@
     },
     {
       "chunk_id": "CDS_OPR_075",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -3079,6 +3163,7 @@
     },
     {
       "chunk_id": "CDS_OPR_076",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -3110,6 +3195,7 @@
     },
     {
       "chunk_id": "CDS_OPR_077",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -3141,6 +3227,7 @@
     },
     {
       "chunk_id": "CDS_OPR_078",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -3172,6 +3259,7 @@
     },
     {
       "chunk_id": "CDS_OPR_079",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -3203,6 +3291,7 @@
     },
     {
       "chunk_id": "CDS_OPR_080",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "operation",
@@ -3235,6 +3324,7 @@
     },
     {
       "chunk_id": "CDS_MNT_007",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "maintenance",
@@ -3267,6 +3357,7 @@
     },
     {
       "chunk_id": "CDS_MNT_008",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "maintenance",
@@ -3299,6 +3390,7 @@
     },
     {
       "chunk_id": "CDS_MNT_009",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "maintenance",
@@ -3331,6 +3423,7 @@
     },
     {
       "chunk_id": "CDS_MNT_010",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "maintenance",
@@ -3363,6 +3456,7 @@
     },
     {
       "chunk_id": "CDS_MNT_011",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "maintenance",
@@ -3395,6 +3489,7 @@
     },
     {
       "chunk_id": "CDS_MNT_012",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "maintenance",
@@ -3427,6 +3522,7 @@
     },
     {
       "chunk_id": "CDS_MNT_013",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "maintenance",
@@ -3459,6 +3555,7 @@
     },
     {
       "chunk_id": "CDS_MNT_014",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "maintenance",
@@ -3491,6 +3588,7 @@
     },
     {
       "chunk_id": "CDS_MNT_015",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "maintenance",
@@ -3523,6 +3621,7 @@
     },
     {
       "chunk_id": "CDS_MNT_016",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "maintenance",
@@ -3555,6 +3654,7 @@
     },
     {
       "chunk_id": "CDS_MNT_017",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "maintenance",
@@ -3587,6 +3687,7 @@
     },
     {
       "chunk_id": "CDS_MNT_018",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "maintenance",
@@ -3619,6 +3720,7 @@
     },
     {
       "chunk_id": "CDS_MNT_019",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "maintenance",
@@ -3651,6 +3753,7 @@
     },
     {
       "chunk_id": "CDS_MNT_020",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "maintenance",
@@ -3683,6 +3786,7 @@
     },
     {
       "chunk_id": "CDS_MNT_021",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "maintenance",
@@ -3715,6 +3819,7 @@
     },
     {
       "chunk_id": "CDS_MNT_022",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "maintenance",
@@ -3747,6 +3852,7 @@
     },
     {
       "chunk_id": "CDS_MNT_023",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "maintenance",
@@ -3779,6 +3885,7 @@
     },
     {
       "chunk_id": "CDS_MNT_024",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "maintenance",
@@ -3811,6 +3918,7 @@
     },
     {
       "chunk_id": "CDS_MNT_025",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "maintenance",
@@ -3843,6 +3951,7 @@
     },
     {
       "chunk_id": "CDS_MNT_026",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "maintenance",
@@ -3875,6 +3984,7 @@
     },
     {
       "chunk_id": "CDS_MNT_027",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "maintenance",
@@ -3907,6 +4017,7 @@
     },
     {
       "chunk_id": "CDS_MNT_028",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "maintenance",
@@ -3939,6 +4050,7 @@
     },
     {
       "chunk_id": "CDS_MNT_029",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "maintenance",
@@ -3971,6 +4083,7 @@
     },
     {
       "chunk_id": "CDS_MNT_030",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "maintenance",
@@ -4003,6 +4116,7 @@
     },
     {
       "chunk_id": "CDS_MNT_031",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "maintenance",
@@ -4035,6 +4149,7 @@
     },
     {
       "chunk_id": "CDS_MNT_032",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "maintenance",
@@ -4067,6 +4182,7 @@
     },
     {
       "chunk_id": "CDS_MNT_033",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "maintenance",
@@ -4099,6 +4215,7 @@
     },
     {
       "chunk_id": "CDS_MNT_034",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "maintenance",
@@ -4131,6 +4248,7 @@
     },
     {
       "chunk_id": "CDS_SVC_001",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "service_data",
@@ -4163,6 +4281,7 @@
     },
     {
       "chunk_id": "CDS_SVC_002",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "service_data",
@@ -4195,6 +4314,7 @@
     },
     {
       "chunk_id": "CDS_SVC_003",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "service_data",
@@ -4227,6 +4347,7 @@
     },
     {
       "chunk_id": "CDS_SVC_004",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "service_data",
@@ -4259,6 +4380,7 @@
     },
     {
       "chunk_id": "CDS_EMG_001",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "emergency",
@@ -4291,6 +4413,7 @@
     },
     {
       "chunk_id": "CDS_EMG_002",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "emergency",
@@ -4323,6 +4446,7 @@
     },
     {
       "chunk_id": "CDS_EMG_003",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "emergency",
@@ -4355,6 +4479,7 @@
     },
     {
       "chunk_id": "CDS_EMG_004",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "emergency",
@@ -4387,6 +4512,7 @@
     },
     {
       "chunk_id": "CDS_EMG_005",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "emergency",
@@ -4419,6 +4545,7 @@
     },
     {
       "chunk_id": "CDS_SVC_005",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "service_data",
@@ -4452,6 +4579,7 @@
     },
     {
       "chunk_id": "CDS_SVC_006",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "service_data",
@@ -4485,6 +4613,7 @@
     },
     {
       "chunk_id": "CDS_PRD_008",
+      "source_file": "cd_series_manual",
       "series": "cd_series",
       "applies_to": "cd_series",
       "category": "product",
@@ -4515,6 +4644,1546 @@
       "language": "en",
       "text": "Coolness storage bedroom Engine oil pressure warning .... 5-29 Exhaust gas detection system cooler (For Singapore) .............7-24 Engine oil temperature gauge ... 5-7 warning (For Hong Kong).........5-39 Engine oil temperature D warning .................................... 5-30 F Differential gear oil, inspection and Engine oil, check and Ferry mode.............................6-119 replenishment.........................14-10 replenishment .......................... 14-3 Fluorescent light switch............5-71 Digital speedometer .................5-10 Engine overrun warning........... 5-28 Freight, handling ....................10-40 Disc wheel, installation Engine system warning............ 5-35 Front fog light switch ................5-69 condition ...................................12-7 ESCOT auto shift down Fuel filter, Door window (Power window) ....7-2 switch..................................... 6-126 replacement .... 13-14, 13-21, 13-27 Drive belt ...................... 3-13, 12-12 ESCOT indicator.................... 6-123 Fuel filter, water Driveline protection function ...6-130 ESCOT ROLL function .......... 6-129 draining .......................13-20, 13-31 Driver Alert Support (DAS) .......6-84 ESCOT VI System ................. 6-120 Fuel gauge .................................5-4 Driver status monitor ..............6-100 ESCOT, buzzer and operation Fuel system, air bleeding .......13-33 Driver support system ..............6-46 messages .............................. 6-131 Fuel tank ........... 3-14, 10-39, 10-51 ESCOT, emergency drive Fully automatic air function .................................. 6-134 conditioner................................7-14 E ESCOT, emergency switch.... 6-134 EBS unit, check ......................13-84 Fuses, replacement..................15-7 ESCOT, operation ................. 10-11 ECO MODE switch..... 6-124, 10-31 ESCOT, +/− button ................ 6-123 Electrical outlet Exhaust brake & EEB G in the cab.......................... 3-17, 8-7 (Extra Engine Brake) ............... 5-64 Gauges.......................................5-6 Engine control warning Exhaust emission control Gear selector switch indicator....................................5-49 system indicator....................... 6-23 (automatic transmission) ............6-2 Engine oil filter, Exhaust emission control Gearshift lever (ESCOT-VI) .......6-2 replacement ...... 13-7, 13-10, 13-12 system meter .................... 5-8, 6-25 Genuine lubricant .....................14-2 Engine oil level .........................12-8 Exhaust emission control Greasing points ........................16-8 Engine oil level warning ...........5-31 system warning........................ 6-33 Periodical inspection ..................2-4 Seats ......................................... 4-8 T Plated cab parts .....................10-57 Service information screen ...... 5-17 Tachograph ............................6-143 Power mirror retraction Service mode......................... 13-40 Tachometer ................................5-3 arm switch ................................5-83 Setting screen.......................... 5-19 Test position, parking brake .......6-9 Power mirror switch..................5-82 Setting2 screen........................ 5-24 Tilt and telescopic steering Power mode switch ..................5-85 Shift navigation function ........ 6-127 wheel........................................4-16 Power steering fluid, check and Smart BSIS Tire chains..............................10-50 replenishment.........................14-12 (Blind Spot Information System) Tire rotation ............................13-42 Power window, and Smart LCS Tire tread groove depth............12-7 operation .......................... 3-18, 7-2 (Lane Change Support) ........... 6-75 Tires .......................................13-42 Spare wheel carrier................ 13-51 Tire, flat .................................... 3-10 Q Speed limiter device (SLD) ........ 5-2 Tire, inspection.........................12-5 Quick warm-up switch ..............5-58 Speedometer ............................. 5-2 Tools ......................................13-94 Spring brake (wheel parking Towing.............................3-10, 15-5 brake), manual release ............ 15-3 Traffic Eye Brake (Collision R SRS airbag system .................. 6-12 damage alleviating system)......6-46 Rear fog light switch .................5-69 Stalk switch..................... 5-59, 5-63 Traffic Eye Cruise Regeneration stop switch .........6-24 Standby mode start (Adaptive cruise control) .......... 6-59 Remote controller method................................... 6-118 Traffic Sign Recognition ...........6-97 (cargo bed or coupler vertical Starting the engine ........... 3-5, 10-2 Transmission gear oil, adjustment switch) .................6-113 Static trailer brake check replacement .............................14-6 Revolution tachograph ...........6-143 switch....................................... 5-85 Transmission oil filter .............13-36 Road grip (low friction road Steering switch ........................ 5-68 Transmission oil temperature start assist system) ..................6-39 Stop lamp malfunction gauge .........................................5-8 Room light switch .....................5-70 warning .................................... 5-40 Transmission oil temperature Storage box ............................... 8-2 warning.....................................5-33 S Stuck in a snow or mud ......... 6-125 Transmission PTO switch ........5-72 Seat belts .................................4-16 Sun visors .................................. 8-9 Trip computer screen ...............5-16",
       "token_est": 1431
+    },
+    {
+      "chunk_id": "CRONER_INTRO_001",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "introduction_safety",
+      "sub_category": "pendahuluan_umum",
+      "source_doc": "",
+      "chapter": "Chapter 1 - Introduction and Safety",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "driver",
+        "fleet_manager",
+        "teknisi"
+      ],
+      "keywords": [
+        "croner series",
+        "manual operasional",
+        "pendahuluan",
+        "garansi",
+        "keselamatan"
+      ],
+      "language": "id",
+      "text": "Manual ini memberikan penjelasan terperinci mengenai pengoperasian kendaraan Croner Series. Pengguna wajib membaca manual ini sebelum mengendarai kendaraan untuk pertama kali. Semua instruksi mengenai pengoperasian, perawatan, dan keselamatan yang tertera di manual ini harus dipatuhi. Kerusakan akibat pelanggaran terhadap instruksi ini tidak ditanggung oleh garansi UD Trucks.",
+      "token_est": 94
+    },
+    {
+      "chunk_id": "CRONER_INTRO_002",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "introduction_safety",
+      "sub_category": "simbol_peringatan",
+      "source_doc": "",
+      "chapter": "Chapter 1 - Introduction and Safety / Safety Symbols",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "driver",
+        "teknisi"
+      ],
+      "keywords": [
+        "danger",
+        "warning",
+        "caution",
+        "note",
+        "simbol peringatan",
+        "keselamatan"
+      ],
+      "language": "id",
+      "text": "Manual ini menggunakan simbol peringatan bertingkat: DANGER (bahaya ekstrem yang dapat menyebabkan kematian atau cedera serius jika diabaikan), WARNING (situasi berbahaya yang mungkin menyebabkan kematian atau cedera serius), CAUTION (praktik yang tidak direkomendasikan), dan NOTE (informasi penting yang perlu ditekankan). Pengguna wajib memahami arti setiap simbol sebelum mengoperasikan kendaraan.",
+      "token_est": 100
+    },
+    {
+      "chunk_id": "CRONER_VID_001",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "vehicle_identification",
+      "sub_category": "plat_identifikasi_kendaraan",
+      "source_doc": "",
+      "chapter": "Chapter 1 - Vehicle Identification",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "driver",
+        "fleet_manager",
+        "teknisi",
+        "dealer"
+      ],
+      "keywords": [
+        "VIN",
+        "plat identifikasi",
+        "vehicle identification number",
+        "GVW",
+        "chassis",
+        "LHD",
+        "RHD"
+      ],
+      "language": "id",
+      "text": "Plat identifikasi kendaraan (VIN Plate) terletak di atas foot step. Untuk kendaraan LHD (kemudi kiri), plat berada di sisi LHS, sedangkan untuk RHD (kemudi kanan) berada di sisi RHS. Nomor VIN juga dipunch di bagian depan rangka chassis, sisi kanan. Plat VIN memuat informasi: nomor persetujuan tipe, nomor VIN, berat muatan yang diizinkan (GVW), berat kombinasi yang diizinkan, dan berat per gandar.",
+      "token_est": 100
+    },
+    {
+      "chunk_id": "CRONER_VID_002",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "vehicle_identification",
+      "sub_category": "identifikasi_mesin",
+      "source_doc": "",
+      "chapter": "Chapter 1 - Engine Identification",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "teknisi",
+        "fleet_manager"
+      ],
+      "keywords": [
+        "mesin GH5E",
+        "mesin GH8E",
+        "plat mesin",
+        "nomor seri mesin",
+        "engine identification"
+      ],
+      "language": "id",
+      "text": "Croner Series tersedia dengan dua varian mesin: GH5E dan GH8E. Plat identifikasi mesin GH5E memuat: designasi mesin dan nomor seri, nomor seri mesin dan chassis, versi mesin serta batas daya dan torsi, dan pabrik perakitan. Mesin GH8E memiliki dua plat identifikasi di lokasi berbeda yang memuat nomor seri mesin, nomor identitas, nomor pabrik perakitan, tanggal penyelesaian mesin, dan data blok silinder.",
+      "token_est": 101
+    },
+    {
+      "chunk_id": "CRONER_VID_003",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "vehicle_identification",
+      "sub_category": "identifikasi_gearbox",
+      "source_doc": "",
+      "chapter": "Chapter 1 - Gearbox Identification",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "teknisi",
+        "fleet_manager"
+      ],
+      "keywords": [
+        "gearbox",
+        "transmisi",
+        "6-speed",
+        "9-speed",
+        "APS2500",
+        "APS3000",
+        "plat gearbox",
+        "110 Ah baterai"
+      ],
+      "language": "id",
+      "text": "Croner Series tersedia dengan tiga pilihan transmisi: gearbox 6-speed manual, gearbox 9-speed manual, dan transmisi otomatis APS2500 atau APS3000. Masing-masing transmisi memiliki plat identifikasi tersendiri. Plat identifikasi baterai Croner menunjukkan kapasitas 110 Ah.",
+      "token_est": 68
+    },
+    {
+      "chunk_id": "CRONER_VID_004",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "vehicle_identification",
+      "sub_category": "identifikasi_gardan_belakang",
+      "source_doc": "",
+      "chapter": "Chapter 1 - Rear Axle Identification",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "teknisi"
+      ],
+      "keywords": [
+        "gardan belakang",
+        "rear axle",
+        "RSS0716",
+        "RSS0918",
+        "RSS1132B",
+        "RSS1132D",
+        "leaf suspension",
+        "air suspension"
+      ],
+      "language": "id",
+      "text": "Gardan belakang Croner Series tersedia dalam beberapa varian: RSS0716 (leaf suspension dan air suspension), RSS0918/RSS0918B (leaf suspension dan air suspension), dan RSS1132B/RSS1132D (leaf suspension dan air suspension). Setiap varian memiliki plat identifikasi tersendiri.",
+      "token_est": 68
+    },
+    {
+      "chunk_id": "CRONER_SAFETY_001",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "introduction_safety",
+      "sub_category": "sebelum_mengemudi",
+      "source_doc": "",
+      "chapter": "Chapter 1.3 - Before Driving",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "driver"
+      ],
+      "keywords": [
+        "sebelum mengemudi",
+        "before driving",
+        "posisi kursi",
+        "kaca depan",
+        "keselamatan kabin",
+        "dashboard"
+      ],
+      "language": "id",
+      "text": "Sebelum mengemudi: pastikan area sekitar kendaraan bebas dari hambatan. Atur posisi kursi dan setir hanya saat kendaraan berhenti — jangan sekali-kali melakukan penyesuaian saat berkendara karena dapat mengakibatkan kehilangan kendali. Jaga area kaca depan tetap bersih dan tidak terhalang aksesori. Jangan meletakkan benda lepas di atas dashboard atau lantai kabin karena dapat menggelinding ke bawah pedal dan mengganggu pengendalian kendaraan.",
+      "token_est": 111
+    },
+    {
+      "chunk_id": "CRONER_SAFETY_002",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "introduction_safety",
+      "sub_category": "saat_mengemudi",
+      "source_doc": "",
+      "chapter": "Chapter 1.4 - While Driving",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "driver"
+      ],
+      "keywords": [
+        "menghidupkan mesin",
+        "rem parkir",
+        "asap knalpot",
+        "ventilasi",
+        "netral",
+        "parking brake"
+      ],
+      "language": "id",
+      "text": "Sebelum menghidupkan mesin, pindahkan tuas persneling ke posisi netral dan pastikan rem parkir aktif. Hindari menghirup asap knalpot — jika parkir di area tertutup, pastikan ventilasi cukup sebelum menghidupkan mesin. Jangan menghidupkan atau menjalankan mesin di dalam kandang tertutup atau area berventilasi buruk.",
+      "token_est": 79
+    },
+    {
+      "chunk_id": "CRONER_SAFETY_003",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "introduction_safety",
+      "sub_category": "batas_kecepatan",
+      "source_doc": "",
+      "chapter": "Chapter 1.5 - Vehicle Speed Limit",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "driver",
+        "fleet_manager"
+      ],
+      "keywords": [
+        "speed limiter",
+        "batas kecepatan",
+        "80 km/h",
+        "90 km/h",
+        "100 km/h",
+        "110 km/h"
+      ],
+      "language": "id",
+      "text": "Kendaraan Croner yang dilengkapi speed limiter tidak dapat diakselerasi melebihi kecepatan yang telah diatur. Pilihan rentang speed limiter: 80 km/jam, 90 km/jam, 100 km/jam, atau 110 km/jam. Selalu patuhi regulasi batas kecepatan jalan dari otoritas setempat.",
+      "token_est": 65
+    },
+    {
+      "chunk_id": "CRONER_SAFETY_004",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "introduction_safety",
+      "sub_category": "tilting_kabin",
+      "source_doc": "",
+      "chapter": "Chapter 1 - Tilting the Cab",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "driver",
+        "teknisi"
+      ],
+      "keywords": [
+        "tilting kabin",
+        "tilt cab",
+        "akses mesin",
+        "perawatan mesin"
+      ],
+      "language": "id",
+      "text": "Prosedur tilting (memiringkan) kabin harus diikuti sesuai panduan manual untuk akses ke area mesin. Pastikan kendaraan berhenti di permukaan yang rata dan stabil sebelum melakukan tilting kabin. Jangan pernah berada di bawah kabin yang sedang ditilt tanpa pengaman yang tepat.",
+      "token_est": 69
+    },
+    {
+      "chunk_id": "CRONER_SAFETY_005",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "introduction_safety",
+      "sub_category": "overheat_dan_bahan_bakar",
+      "source_doc": "",
+      "chapter": "Chapter 1 - Overheating / Fuel Filter / Battery",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "driver"
+      ],
+      "keywords": [
+        "overheat",
+        "filter bahan bakar",
+        "baterai",
+        "modifikasi",
+        "suku cadang genuine"
+      ],
+      "language": "id",
+      "text": "Prosedur saat kendaraan overheat, penanganan filter bahan bakar dan tangki, serta penanganan baterai harus mengikuti instruksi dalam manual. Jangan memodifikasi atau mengganti suku cadang tanpa persetujuan UD Trucks. UD Trucks merekomendasikan penggunaan suku cadang dan pelumas genuine UD untuk semua perawatan terjadwal.",
+      "token_est": 80
+    },
+    {
+      "chunk_id": "CRONER_SAFETY_006",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "introduction_safety",
+      "sub_category": "obd_dan_telematics",
+      "source_doc": "",
+      "chapter": "Chapter 1 - OBD / Telematics Gateway",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "fleet_manager",
+        "teknisi"
+      ],
+      "keywords": [
+        "OBD",
+        "on-board diagnostics",
+        "telematics gateway",
+        "data kendaraan",
+        "diagnostik"
+      ],
+      "language": "id",
+      "text": "Croner dilengkapi sistem OBD (On-Board Diagnostics) yang mencatat data kondisi operasi, kejadian, dan kesalahan kendaraan untuk mendukung pengenalan dan perbaikan masalah. Data teknis dapat dibaca dari memori data saat servis menggunakan tester diagnostik khusus. Croner yang dilengkapi telematics gateway memungkinkan data dibaca dan ditransfer ke produsen atau afiliasinya sesuai ketentuan hukum setempat.",
+      "token_est": 101
+    },
+    {
+      "chunk_id": "CRONER_SAFETY_007",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "introduction_safety",
+      "sub_category": "biodiesel_euro",
+      "source_doc": "",
+      "chapter": "Chapter 1 - Biodiesel / Euro Standard",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "driver",
+        "fleet_manager"
+      ],
+      "keywords": [
+        "biodiesel",
+        "Euro IV",
+        "Euro V",
+        "standar emisi",
+        "bahan bakar"
+      ],
+      "language": "id",
+      "text": "Croner Series tersedia dalam varian yang memenuhi standar emisi Euro IV, V, atau setara. Panduan penggunaan biodiesel dan ketentuan standar Euro tersedia dalam manual. Selalu gunakan jenis bahan bakar sesuai spesifikasi yang direkomendasikan UD Trucks untuk menjaga performa dan kepatuhan emisi.",
+      "token_est": 73
+    },
+    {
+      "chunk_id": "CRONER_CAB_001",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "cab_entry_exit",
+      "sub_category": "pintu_dan_masuk_kabin",
+      "source_doc": "",
+      "chapter": "Chapter 2 - Getting In and Out of the Cab / Doors",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "driver"
+      ],
+      "keywords": [
+        "pintu kabin",
+        "masuk kabin",
+        "keluar kabin",
+        "getting in cab",
+        "keselamatan pintu"
+      ],
+      "language": "id",
+      "text": "Sebelum membuka pintu kabin, periksa lalu lintas dan pastikan aman serta pintu bebas dari halangan. Prosedur masuk dan keluar kabin harus dilakukan dengan hati-hati menggunakan pegangan yang tersedia. Saat keluar kabin, pastikan kendaraan dalam kondisi parkir aman dengan rem parkir aktif.",
+      "token_est": 72
+    },
+    {
+      "chunk_id": "CRONER_SEAT_001",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "seat_adjustment",
+      "sub_category": "jenis_kursi_pengemudi",
+      "source_doc": "",
+      "chapter": "Chapter 2 - Driver Seat Types",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "driver"
+      ],
+      "keywords": [
+        "kursi pengemudi",
+        "driver seat",
+        "air suspension seat",
+        "kursi mekanis",
+        "fixed seat",
+        "armrest"
+      ],
+      "language": "id",
+      "text": "Croner Series menyediakan lima pilihan kursi pengemudi: (1) kursi mekanis dengan armrest, (2) kursi mekanis tanpa armrest, (3) kursi air suspension dengan armrest, (4) kursi air suspension tanpa armrest, dan (5) kursi fixed. Kendaraan dilengkapi salah satu dari pilihan ini sesuai spesifikasi.",
+      "token_est": 73
+    },
+    {
+      "chunk_id": "CRONER_SEAT_002",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "seat_adjustment",
+      "sub_category": "penyesuaian_kursi_mekanis",
+      "source_doc": "",
+      "chapter": "Chapter 2 - Seat Adjustments",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "driver"
+      ],
+      "keywords": [
+        "longitudinal adjustment",
+        "backrest recliner",
+        "seat tilt",
+        "seat height",
+        "kursi mekanis",
+        "penyesuaian kursi"
+      ],
+      "language": "id",
+      "text": "Penyesuaian kursi mekanis meliputi: (1) Longitudinal adjustment — rel kursi digeser ke depan/belakang, 16 langkah masing-masing 10 mm (total 160 mm). (2) Seat cushion longitudinal — 2 posisi maju dari standar, total 40 mm dengan kenaikan 20 mm. (3) Backrest recliner — dikunci dalam langkah 3°, jangkauan 36° ke depan dan 48° ke belakang dari posisi normal. (4) Seat tilt & height — 5 posisi penguncian sepanjang 60 mm total. Jangan menyesuaikan kursi saat berkendara.",
+      "token_est": 117
+    },
+    {
+      "chunk_id": "CRONER_SEAT_003",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "seat_adjustment",
+      "sub_category": "penyesuaian_kursi_air_suspension",
+      "source_doc": "",
+      "chapter": "Chapter 2 - Air Suspension Seat",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "driver"
+      ],
+      "keywords": [
+        "air suspension seat",
+        "suspensi udara kursi",
+        "penyesuaian berat",
+        "50 kg",
+        "130 kg",
+        "100 mm"
+      ],
+      "language": "id",
+      "text": "Kursi air suspension menyesuaikan ketinggian awal secara otomatis berdasarkan berat pengemudi dan dilengkapi suspensi vertikal. Rentang penyesuaian suspensi: berat pengemudi 50 kg–130 kg, tinggi maksimum 100 mm. Air suspension adjuster: angkat ke atas untuk mengisi udara, tekan ke bawah untuk membuang udara. Sebelum berkendara, pengemudi harus mengisi udara suspensi hingga posisi tengah untuk memastikan kenyamanan berkendara yang optimal.",
+      "token_est": 110
+    },
+    {
+      "chunk_id": "CRONER_SEAT_004",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "seat_adjustment",
+      "sub_category": "armrest_dan_sabuk_pengaman",
+      "source_doc": "",
+      "chapter": "Chapter 2 - Armrest / Seat Belts / Steering Wheel",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "driver"
+      ],
+      "keywords": [
+        "armrest",
+        "sabuk pengaman",
+        "seat belt",
+        "penyesuaian setir",
+        "steering wheel adjust"
+      ],
+      "language": "id",
+      "text": "Armrest dapat diputar maksimum 119° dan mengunci pada sudut 46° dari posisi terendah. Armrest direkomendasikan hanya untuk perjalanan jarak jauh/highway. Sabuk pengaman wajib dipakai oleh pengemudi dan penumpang. Jangan memakai sabuk pengaman dalam posisi terbalik atau terpuntir karena mengurangi efektivitasnya. Setir dapat disesuaikan posisinya hanya saat kendaraan berhenti.",
+      "token_est": 94
+    },
+    {
+      "chunk_id": "CRONER_INST_001",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "instrument_cluster",
+      "sub_category": "instrumen_dan_indikator",
+      "source_doc": "",
+      "chapter": "Chapter 3 - Equipment Description / Instruments",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "driver"
+      ],
+      "keywords": [
+        "instrument cluster",
+        "speedometer",
+        "tachometer",
+        "indikator bahan bakar",
+        "indikator suhu",
+        "lampu peringatan"
+      ],
+      "language": "id",
+      "text": "Panel instrumen Croner Series dilengkapi dengan speedometer, tachometer, indikator level bahan bakar, indikator suhu coolant, dan berbagai lampu peringatan. Indikator-indikator ini memantau kondisi operasional kendaraan secara real-time. Pengemudi wajib memperhatikan semua indikator selama pengoperasian kendaraan.",
+      "token_est": 78
+    },
+    {
+      "chunk_id": "CRONER_INST_002",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "instrument_cluster",
+      "sub_category": "display_menu",
+      "source_doc": "",
+      "chapter": "Chapter 3 - Display Menu",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "driver"
+      ],
+      "keywords": [
+        "display menu",
+        "digital display",
+        "informasi operasional",
+        "menu navigasi"
+      ],
+      "language": "id",
+      "text": "Croner Series dilengkapi display menu digital yang dapat menampilkan berbagai informasi operasional kendaraan. Menu display dapat dinavigasi menggunakan tombol kontrol pada panel instrumen. Informasi yang tersedia meliputi data perjalanan, status kendaraan, dan pesan peringatan sistem.",
+      "token_est": 71
+    },
+    {
+      "chunk_id": "CRONER_SWITCH_001",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "switches_controls",
+      "sub_category": "sakelar_dan_kombinasi_sakelar",
+      "source_doc": "",
+      "chapter": "Chapter 3 - Switches / Combination Switch",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "driver"
+      ],
+      "keywords": [
+        "sakelar",
+        "combination switch",
+        "tuas multifungsi",
+        "lampu",
+        "wiper",
+        "klakson"
+      ],
+      "language": "id",
+      "text": "Croner Series dilengkapi berbagai sakelar kontrol untuk mengoperasikan sistem kendaraan. Combination switch (tuas multifungsi) terletak pada kolom setir dan mengendalikan lampu, wiper, dan klakson. Posisi dan fungsi setiap sakelar harus dikenali dengan baik sebelum mengoperasikan kendaraan.",
+      "token_est": 72
+    },
+    {
+      "chunk_id": "CRONER_GEAR_001",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "gearshift_operation",
+      "sub_category": "tuas_persneling_manual",
+      "source_doc": "",
+      "chapter": "Chapter 3 - Gearshift Lever and Push Button",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "driver"
+      ],
+      "keywords": [
+        "tuas persneling",
+        "gearshift lever",
+        "push button",
+        "6-speed",
+        "9-speed",
+        "transmisi manual",
+        "gigi netral"
+      ],
+      "language": "id",
+      "text": "Croner Series dengan transmisi manual dilengkapi tuas persneling dan push button untuk perpindahan gigi. Transmisi manual tersedia dalam varian 6-speed dan 9-speed. Sebelum menghidupkan mesin, pastikan tuas persneling berada di posisi netral. Perpindahan gigi harus dilakukan sesuai prosedur untuk menghindari kerusakan transmisi.",
+      "token_est": 82
+    },
+    {
+      "chunk_id": "CRONER_GEAR_002",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "gearshift_operation",
+      "sub_category": "transmisi_otomatis",
+      "source_doc": "",
+      "chapter": "Chapter 5 - Operating with Automatic Transmission",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "driver"
+      ],
+      "keywords": [
+        "transmisi otomatis",
+        "automatic transmission",
+        "APS2500",
+        "APS3000",
+        "perpindahan gigi otomatis"
+      ],
+      "language": "id",
+      "text": "Croner yang dilengkapi transmisi otomatis APS2500 atau APS3000 memiliki prosedur pengoperasian khusus. Perpindahan gigi dilakukan secara otomatis oleh sistem transmisi. Panduan pengoperasian dengan transmisi otomatis tersedia pada Bab 5 manual. Selalu ikuti prosedur yang benar untuk memastikan umur transmisi yang panjang.",
+      "token_est": 80
+    },
+    {
+      "chunk_id": "CRONER_PTO_001",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series (jika dilengkapi)",
+      "applies_to": "Croner Series (jika dilengkapi)",
+      "category": "pto_operation",
+      "sub_category": "operasi_pto",
+      "source_doc": "",
+      "chapter": "Chapter 3 - PTO (Power Take-Off)",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "driver",
+        "teknisi"
+      ],
+      "keywords": [
+        "PTO",
+        "power take-off",
+        "pompa hidraulik",
+        "peralatan eksternal",
+        "opsional"
+      ],
+      "language": "id",
+      "text": "PTO (Power Take-Off) adalah fitur opsional pada Croner Series. PTO digunakan untuk menggerakkan peralatan eksternal yang dipasang pada kendaraan, seperti pompa hidraulik atau winch. Pengoperasian PTO harus dilakukan sesuai prosedur dalam manual untuk menghindari kerusakan pada sistem kendaraan maupun peralatan yang terpasang.",
+      "token_est": 81
+    },
+    {
+      "chunk_id": "CRONER_FUEL_001",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series (jika dilengkapi)",
+      "applies_to": "Croner Series (jika dilengkapi)",
+      "category": "switches_controls",
+      "sub_category": "fuel_coaching_system",
+      "source_doc": "",
+      "chapter": "Chapter 3 - Fuel Coaching System",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "driver",
+        "fleet_manager"
+      ],
+      "keywords": [
+        "fuel coaching system",
+        "efisiensi bahan bakar",
+        "konsumsi bahan bakar",
+        "gaya berkendara efisien"
+      ],
+      "language": "id",
+      "text": "Fuel Coaching System adalah fitur opsional pada Croner Series yang membantu pengemudi mengoptimalkan konsumsi bahan bakar. Sistem ini memberikan panduan berkendara real-time untuk mendorong gaya berkendara yang lebih efisien dan hemat bahan bakar.",
+      "token_est": 61
+    },
+    {
+      "chunk_id": "CRONER_5W_001",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series (versi tractor head)",
+      "applies_to": "Croner Series (versi tractor head)",
+      "category": "fifth_wheel_operation",
+      "sub_category": "operasi_fifth_wheel",
+      "source_doc": "",
+      "chapter": "Chapter 3 - Fifth Wheel Operation",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "driver",
+        "teknisi"
+      ],
+      "keywords": [
+        "fifth wheel",
+        "pelana",
+        "tractor head",
+        "coupling",
+        "uncoupling",
+        "semi-trailer"
+      ],
+      "language": "id",
+      "text": "Fifth wheel (pelana) adalah komponen penghubung antara tractor head Croner dengan semi-trailer. Prosedur coupling (penyambungan) dan uncoupling (pelepasan) fifth wheel harus dilakukan dengan benar untuk keselamatan. Pemeriksaan dan pelumasan fifth wheel secara berkala wajib dilakukan sesuai jadwal perawatan.",
+      "token_est": 77
+    },
+    {
+      "chunk_id": "CRONER_AIRSUS_001",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series (jika dilengkapi)",
+      "applies_to": "Croner Series (jika dilengkapi)",
+      "category": "air_suspension",
+      "sub_category": "suspensi_udara_elektronik",
+      "source_doc": "",
+      "chapter": "Chapter 3 - Air Suspension (Electronically Controlled)",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "driver",
+        "teknisi"
+      ],
+      "keywords": [
+        "air suspension",
+        "suspensi udara elektronik",
+        "ketinggian kendaraan",
+        "loading",
+        "unloading"
+      ],
+      "language": "id",
+      "text": "Croner Series yang dilengkapi Air Suspension elektronik memiliki sistem kontrol suspensi udara yang memungkinkan pengemudi menyesuaikan ketinggian kendaraan secara elektronik. Sistem ini berguna untuk proses loading/unloading dan menyesuaikan posisi kendaraan sesuai kondisi jalan.",
+      "token_est": 70
+    },
+    {
+      "chunk_id": "CRONER_BOGIE_001",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series (jika dilengkapi)",
+      "applies_to": "Croner Series (jika dilengkapi)",
+      "category": "air_suspension",
+      "sub_category": "bogie_control",
+      "source_doc": "",
+      "chapter": "Chapter 3 - Bogie Control",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "driver"
+      ],
+      "keywords": [
+        "bogie control",
+        "distribusi beban",
+        "gandar",
+        "manuver",
+        "stabilitas"
+      ],
+      "language": "id",
+      "text": "Bogie control adalah fitur opsional pada Croner Series yang memungkinkan pengemudi mengontrol distribusi beban pada gandar. Sistem ini membantu dalam manuver di area terbatas dan meningkatkan stabilitas kendaraan saat membawa muatan berat.",
+      "token_est": 59
+    },
+    {
+      "chunk_id": "CRONER_AIRBAG_001",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series (jika dilengkapi)",
+      "applies_to": "Croner Series (jika dilengkapi)",
+      "category": "introduction_safety",
+      "sub_category": "airbag_srs",
+      "source_doc": "",
+      "chapter": "Chapter 3 - SRS Airbag System",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "driver"
+      ],
+      "keywords": [
+        "SRS airbag",
+        "kantong udara",
+        "airbag system",
+        "keselamatan benturan"
+      ],
+      "language": "id",
+      "text": "Croner yang dilengkapi sistem SRS Airbag memiliki kantong udara keselamatan yang mengembang secara otomatis saat terjadi benturan keras. Pengemudi harus memahami cara kerja airbag dan pantangan-pantangan yang berlaku, seperti tidak memasang aksesori yang menghalangi area airbag.",
+      "token_est": 69
+    },
+    {
+      "chunk_id": "CRONER_AC_001",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "airconditioning",
+      "sub_category": "ventilasi_dan_ac",
+      "source_doc": "",
+      "chapter": "Chapter 4 - Air Conditioning / Ventilation",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "driver"
+      ],
+      "keywords": [
+        "air conditioning",
+        "AC",
+        "ventilasi",
+        "filter udara kabin",
+        "kontrol AC"
+      ],
+      "language": "id",
+      "text": "Sistem AC dan ventilasi Croner Series dioperasikan melalui panel kontrol di kabin. Ventilasi udara segar dapat diatur secara independen dari sistem AC. Pastikan filter udara kabin dibersihkan secara berkala sesuai jadwal perawatan untuk menjaga kualitas udara dalam kabin.",
+      "token_est": 68
+    },
+    {
+      "chunk_id": "CRONER_INSPECT_001",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "daily_inspection",
+      "sub_category": "area_pemeriksaan_harian",
+      "source_doc": "",
+      "chapter": "Chapter 5 - Daily Inspection / Areas to Inspect",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "driver",
+        "teknisi"
+      ],
+      "keywords": [
+        "pemeriksaan harian",
+        "daily inspection",
+        "oli mesin",
+        "coolant",
+        "tekanan ban",
+        "lampu",
+        "cermin"
+      ],
+      "language": "id",
+      "text": "Pemeriksaan harian Croner Series meliputi: level oli mesin, level coolant, level cairan rem, tekanan dan kondisi ban, fungsi lampu dan sein, kondisi wiper, level cairan washer, kondisi cermin, dan tidak adanya kebocoran di bawah kendaraan. Pemeriksaan harian wajib dilakukan sebelum kendaraan dioperasikan.",
+      "token_est": 76
+    },
+    {
+      "chunk_id": "CRONER_DRIVE_001",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "driving_operation",
+      "sub_category": "prosedur_operasi_berkendara",
+      "source_doc": "",
+      "chapter": "Chapter 5 - Correct Driving Operation / Operation Precautions",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "driver"
+      ],
+      "keywords": [
+        "prosedur berkendara",
+        "start mesin",
+        "perpindahan gigi",
+        "teknik rem",
+        "parkir aman"
+      ],
+      "language": "id",
+      "text": "Prosedur pengoperasian berkendara Croner yang benar meliputi: pemeriksaan sebelum start, prosedur start mesin yang tepat, teknik perpindahan gigi yang benar, penggunaan rem yang efektif, dan prosedur parkir yang aman. Ikuti semua panduan operasi untuk memaksimalkan umur kendaraan dan keselamatan berkendara.",
+      "token_est": 77
+    },
+    {
+      "chunk_id": "CRONER_SPECIAL_001",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "special_conditions_driving",
+      "sub_category": "berkendara_kondisi_khusus",
+      "source_doc": "",
+      "chapter": "Chapter 5 - Driving Under Special Conditions",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "driver"
+      ],
+      "keywords": [
+        "kondisi khusus",
+        "tanjakan",
+        "turunan",
+        "jalan berlumpur",
+        "hujan lebat",
+        "area konstruksi"
+      ],
+      "language": "id",
+      "text": "Panduan berkendara dalam kondisi khusus pada Croner Series mencakup: berkendara di tanjakan dan turunan curam, berkendara di jalan berlumpur atau berpasir, berkendara dalam kondisi hujan lebat, dan berkendara di area konstruksi. Teknik khusus dan tindakan pencegahan harus diterapkan untuk setiap kondisi jalan yang berbeda.",
+      "token_est": 81
+    },
+    {
+      "chunk_id": "CRONER_MAINT_001",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "inspection_maintenance",
+      "sub_category": "filter_udara",
+      "source_doc": "",
+      "chapter": "Chapter 6 - Inspection and Maintenance / Air Cleaner",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "teknisi",
+        "driver"
+      ],
+      "keywords": [
+        "air cleaner",
+        "filter udara",
+        "elemen filter",
+        "indikator filter",
+        "pembersihan filter"
+      ],
+      "language": "id",
+      "text": "Air cleaner (filter udara mesin) Croner Series harus diperiksa dan dibersihkan secara berkala. Ganti elemen filter sesuai jadwal perawatan atau lebih cepat jika indikator filter udara menyala. Penggunaan filter udara yang kotor dapat mengurangi performa mesin dan meningkatkan konsumsi bahan bakar.",
+      "token_est": 74
+    },
+    {
+      "chunk_id": "CRONER_MAINT_002",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "inspection_maintenance",
+      "sub_category": "oli_mesin_dan_filter",
+      "source_doc": "",
+      "chapter": "Chapter 6 - Engine Oil Filter / Oils",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "teknisi",
+        "driver"
+      ],
+      "keywords": [
+        "oli mesin",
+        "engine oil",
+        "filter oli",
+        "viskositas",
+        "penggantian oli",
+        "GH5E",
+        "GH8E"
+      ],
+      "language": "id",
+      "text": "Penggantian oli mesin dan filter oli Croner Series harus dilakukan sesuai jadwal perawatan. Gunakan hanya oli mesin yang direkomendasikan UD Trucks sesuai spesifikasi viskositas untuk mesin GH5E atau GH8E. Spesifikasi jenis oli untuk berbagai sistem kendaraan (mesin, transmisi, gardan, hidraulik) tersedia pada bagian Service Data.",
+      "token_est": 83
+    },
+    {
+      "chunk_id": "CRONER_MAINT_003",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "inspection_maintenance",
+      "sub_category": "filter_bahan_bakar",
+      "source_doc": "",
+      "chapter": "Chapter 6 - Fuel Filter / Priming the Fuel System",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "teknisi",
+        "driver"
+      ],
+      "keywords": [
+        "filter bahan bakar",
+        "fuel filter",
+        "priming",
+        "pompa bahan bakar manual",
+        "udara dalam saluran"
+      ],
+      "language": "id",
+      "text": "Filter bahan bakar Croner harus diganti sesuai interval perawatan yang ditentukan. Setelah penggantian filter, sistem bahan bakar harus di-priming (dipancing) agar mesin dapat dihidupkan. Prosedur priming meliputi pengoperasian pompa bahan bakar manual hingga tidak ada udara dalam saluran bahan bakar.",
+      "token_est": 75
+    },
+    {
+      "chunk_id": "CRONER_BATT_001",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "battery_maintenance",
+      "sub_category": "perawatan_baterai",
+      "source_doc": "",
+      "chapter": "Chapter 6 - Battery",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "driver",
+        "teknisi"
+      ],
+      "keywords": [
+        "baterai",
+        "battery",
+        "110 Ah",
+        "elektrolit",
+        "terminal baterai",
+        "korosi",
+        "kabel baterai"
+      ],
+      "language": "id",
+      "text": "Baterai Croner Series berkapasitas 110 Ah. Perawatan baterai meliputi: pemeriksaan level elektrolit, pemeriksaan terminal dari korosi, dan pengencangan koneksi terminal. Jauhkan sumber api saat bekerja dengan baterai. Pastikan kabel baterai diputus dengan urutan yang benar (negatif dulu) saat melakukan pekerjaan kelistrikan.",
+      "token_est": 81
+    },
+    {
+      "chunk_id": "CRONER_TYRE_001",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "tyre_maintenance",
+      "sub_category": "perawatan_ban",
+      "source_doc": "",
+      "chapter": "Chapter 6 - Tyres",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "driver",
+        "teknisi"
+      ],
+      "keywords": [
+        "ban",
+        "tyre",
+        "tekanan ban",
+        "rotasi ban",
+        "tapak ban",
+        "tyre pressure",
+        "kondisi dingin"
+      ],
+      "language": "id",
+      "text": "Perawatan ban Croner meliputi pemeriksaan tekanan ban secara rutin, rotasi ban sesuai jadwal, dan pemeriksaan kondisi tapak ban. Tekanan ban yang tidak tepat dapat memengaruhi keselamatan, konsumsi bahan bakar, dan umur ban. Gunakan alat pengukur tekanan ban yang tepat dan selalu periksa tekanan ban dalam kondisi dingin.",
+      "token_est": 80
+    },
+    {
+      "chunk_id": "CRONER_TYRE_002",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "tyre_maintenance",
+      "sub_category": "penggunaan_dongkrak",
+      "source_doc": "",
+      "chapter": "Chapter 6 - Using the Jack",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "driver"
+      ],
+      "keywords": [
+        "dongkrak",
+        "jack",
+        "jacking point",
+        "baji pengaman",
+        "penggantian ban"
+      ],
+      "language": "id",
+      "text": "Penggunaan dongkrak (jack) pada Croner harus mengikuti prosedur yang benar. Pastikan kendaraan berhenti di permukaan yang rata dan keras sebelum menggunakan dongkrak. Gunakan titik dongkrak yang ditentukan (jacking point) pada chassis — jangan mendongkrak di sembarang titik. Pasang baji pengaman pada roda sebelum mendongkrak.",
+      "token_est": 81
+    },
+    {
+      "chunk_id": "CRONER_LIGHT_001",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "inspection_maintenance",
+      "sub_category": "lampu_dan_sekring",
+      "source_doc": "",
+      "chapter": "Chapter 6 - Lights and Fuses",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "driver",
+        "teknisi"
+      ],
+      "keywords": [
+        "lampu",
+        "sekring",
+        "fuse",
+        "kotak sekring",
+        "fuse box",
+        "kelistrikan",
+        "rating ampere"
+      ],
+      "language": "id",
+      "text": "Pemeriksaan dan penggantian lampu serta sekring (fuse) Croner harus dilakukan sesuai prosedur. Kotak sekring berisi sekring untuk berbagai sistem kelistrikan kendaraan. Gunakan hanya sekring dengan rating ampere yang sesuai spesifikasi — jangan pernah mengganti sekring dengan kawat atau benda lain.",
+      "token_est": 74
+    },
+    {
+      "chunk_id": "CRONER_COOL_001",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "inspection_maintenance",
+      "sub_category": "cairan_pendingin",
+      "source_doc": "",
+      "chapter": "Chapter 6 - Coolant",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "driver",
+        "teknisi"
+      ],
+      "keywords": [
+        "coolant",
+        "cairan pendingin",
+        "radiator",
+        "reservoir coolant",
+        "overheat",
+        "pendingin mesin"
+      ],
+      "language": "id",
+      "text": "Level coolant Croner harus diperiksa secara rutin di reservoir coolant. Isi hanya dengan coolant yang direkomendasikan UD Trucks. Jangan membuka tutup radiator saat mesin dalam kondisi panas — tunggu hingga mesin dingin untuk menghindari risiko luka bakar akibat uap bertekanan. Ganti coolant sesuai interval perawatan.",
+      "token_est": 79
+    },
+    {
+      "chunk_id": "CRONER_BRAKE_001",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "inspection_maintenance",
+      "sub_category": "sistem_rem",
+      "source_doc": "",
+      "chapter": "Chapter 6 - Brake",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "driver",
+        "teknisi"
+      ],
+      "keywords": [
+        "rem",
+        "brake",
+        "kampas rem",
+        "cairan rem",
+        "rem parkir",
+        "parking brake",
+        "sistem rem"
+      ],
+      "language": "id",
+      "text": "Sistem rem Croner harus diperiksa secara berkala meliputi: ketebalan kampas rem, level cairan rem, kondisi selang rem, dan fungsi rem parkir. Jika rem terasa tidak responsif atau ada bunyi aneh saat pengereman, segera bawa kendaraan ke dealer resmi UD Trucks untuk pemeriksaan.",
+      "token_est": 69
+    },
+    {
+      "chunk_id": "CRONER_WIPER_001",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "inspection_maintenance",
+      "sub_category": "wiper_dan_cermin",
+      "source_doc": "",
+      "chapter": "Chapter 6 - Wiper Blade / Mirror",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "driver"
+      ],
+      "keywords": [
+        "wiper blade",
+        "karet wiper",
+        "cermin",
+        "spion",
+        "mirror",
+        "visibilitas"
+      ],
+      "language": "id",
+      "text": "Karet wiper Croner harus diperiksa kondisinya dan diganti jika sudah aus atau meninggalkan bekas goresan pada kaca. Cermin (spion) harus disesuaikan posisinya sebelum berkendara dan dijaga kebersihannya. Visibilitas yang baik melalui cermin sangat penting untuk keselamatan berkendara truk besar.",
+      "token_est": 74
+    },
+    {
+      "chunk_id": "CRONER_EXHAUST_001",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "inspection_maintenance",
+      "sub_category": "penanganan_knalpot",
+      "source_doc": "",
+      "chapter": "Chapter 6 - Handling the Exhaust",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "driver",
+        "teknisi"
+      ],
+      "keywords": [
+        "knalpot",
+        "exhaust",
+        "SCR",
+        "Selective Catalytic Reduction",
+        "sistem emisi",
+        "kebocoran knalpot"
+      ],
+      "language": "id",
+      "text": "Sistem knalpot Croner termasuk komponen SCR (Selective Catalytic Reduction) untuk memenuhi standar emisi Euro. Penanganan knalpot harus sesuai prosedur — hindari kontak langsung dengan bagian knalpot yang panas. Periksa secara berkala kondisi sistem knalpot dan pastikan tidak ada kebocoran.",
+      "token_est": 72
+    },
+    {
+      "chunk_id": "CRONER_STORE_001",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "vehicle_storage",
+      "sub_category": "penyimpanan_kendaraan",
+      "source_doc": "",
+      "chapter": "Chapter 6 - Storing the Vehicle",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "fleet_manager",
+        "driver"
+      ],
+      "keywords": [
+        "penyimpanan kendaraan",
+        "vehicle storage",
+        "parkir jangka panjang",
+        "terminal baterai",
+        "kondensasi"
+      ],
+      "language": "id",
+      "text": "Prosedur penyimpanan kendaraan Croner untuk jangka panjang meliputi: parkir di lokasi yang aman, aktifkan rem parkir, isi penuh tangki bahan bakar untuk mencegah kondensasi, lepas terminal baterai jika tidak digunakan dalam jangka lama, dan tutupi kendaraan untuk melindungi dari debu dan cuaca. Lakukan pemeriksaan menyeluruh sebelum menghidupkan kembali kendaraan setelah penyimpanan lama.",
+      "token_est": 97
+    },
+    {
+      "chunk_id": "CRONER_GREASE_001",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "inspection_maintenance",
+      "sub_category": "pelumasan_grease",
+      "source_doc": "",
+      "chapter": "Chapter 6 - Lubrication with Grease",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "teknisi"
+      ],
+      "keywords": [
+        "grease",
+        "pelumasan",
+        "lubrication",
+        "propeller shaft",
+        "king pin",
+        "bearing",
+        "perawatan berkala"
+      ],
+      "language": "id",
+      "text": "Pelumasan dengan grease pada komponen-komponen Croner harus dilakukan sesuai jadwal perawatan. Komponen yang memerlukan pelumasan grease meliputi: sambungan propeller shaft, king pin, fifth wheel (jika ada), dan bearing tertentu. Gunakan jenis grease yang direkomendasikan UD Trucks.",
+      "token_est": 70
+    },
+    {
+      "chunk_id": "CRONER_MAINT_SCHED_001",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "maintenance_schedule",
+      "sub_category": "jadwal_perawatan_overview",
+      "source_doc": "",
+      "chapter": "Chapter 7 - Maintenance Schedule / Overview",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "fleet_manager",
+        "teknisi"
+      ],
+      "keywords": [
+        "jadwal perawatan",
+        "maintenance schedule",
+        "interval perawatan",
+        "jarak tempuh",
+        "perawatan berkala"
+      ],
+      "language": "id",
+      "text": "Jadwal perawatan Croner Series mencakup interval perawatan berdasarkan jarak tempuh dan/atau waktu. Perawatan terjadwal meliputi penggantian oli dan filter, pemeriksaan sistem rem, pemeriksaan ban, pemeriksaan sistem bahan bakar, dan pemeriksaan sistem kelistrikan. Selalu gunakan suku cadang dan pelumas genuine UD Trucks untuk mempertahankan garansi dan performa optimal.",
+      "token_est": 93
+    },
+    {
+      "chunk_id": "CRONER_EMERG_001",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "emergency_procedures",
+      "sub_category": "prosedur_darurat_umum",
+      "source_doc": "",
+      "chapter": "Chapter 8 - Emergency Procedures / When There Is a Problem",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "driver"
+      ],
+      "keywords": [
+        "prosedur darurat",
+        "emergency procedure",
+        "lampu hazard",
+        "segitiga pengaman",
+        "masalah kendaraan"
+      ],
+      "language": "id",
+      "text": "Saat menghadapi masalah pada kendaraan Croner, langkah awal adalah: parkir kendaraan di tempat aman, aktifkan lampu hazard, pasang segitiga pengaman, dan evaluasi situasi sebelum mengambil tindakan. Hubungi dealer resmi UD Trucks atau layanan darurat jika diperlukan. Jangan mencoba perbaikan yang melebihi kemampuan teknis Anda di lapangan.",
+      "token_est": 85
+    },
+    {
+      "chunk_id": "CRONER_EMERG_002",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "emergency_procedures",
+      "sub_category": "jump_start",
+      "source_doc": "",
+      "chapter": "Chapter 8 - Jump Start",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "driver",
+        "teknisi"
+      ],
+      "keywords": [
+        "jump start",
+        "kabel jumper",
+        "baterai lemah",
+        "terminal positif",
+        "terminal negatif",
+        "ground",
+        "prosedur jump start"
+      ],
+      "language": "id",
+      "text": "Prosedur jump start Croner Series: (1) Pastikan kedua kendaraan dalam kondisi mati. (2) Hubungkan kabel jumper merah ke terminal positif (+) baterai yang mati, kemudian ke terminal positif (+) baterai donor. (3) Hubungkan kabel jumper hitam ke terminal negatif (-) baterai donor, kemudian ke titik ground (bukan terminal negatif baterai yang mati) pada kendaraan yang mati. (4) Hidupkan mesin kendaraan donor, kemudian coba hidupkan kendaraan yang mati. (5) Lepas kabel dengan urutan terbalik.",
+      "token_est": 123
+    },
+    {
+      "chunk_id": "CRONER_SVCDATA_001",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "service_data",
+      "sub_category": "standar_perawatan",
+      "source_doc": "",
+      "chapter": "Chapter 9 - Service Data / Maintenance Standard",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "teknisi",
+        "fleet_manager"
+      ],
+      "keywords": [
+        "service data",
+        "data servis",
+        "standar perawatan",
+        "maintenance standard",
+        "torsi baut",
+        "celah valve",
+        "spesifikasi teknis"
+      ],
+      "language": "id",
+      "text": "Data servis dan standar perawatan Croner Series mencakup: spesifikasi torsi pengencangan baut utama, celah valve mesin, tekanan kompresi mesin, spesifikasi rem, dan toleransi komponen. Data ini digunakan sebagai acuan teknis saat melakukan perbaikan dan perawatan oleh teknisi terlatih.",
+      "token_est": 71
+    },
+    {
+      "chunk_id": "CRONER_SVCDATA_002",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "service_data",
+      "sub_category": "spesifikasi_oli",
+      "source_doc": "",
+      "chapter": "Chapter 9 - Service Data / Oils",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "teknisi",
+        "fleet_manager"
+      ],
+      "keywords": [
+        "spesifikasi oli",
+        "API CJ-4",
+        "oli transmisi",
+        "oli gardan",
+        "cairan hidraulik",
+        "kapasitas oli"
+      ],
+      "language": "id",
+      "text": "Spesifikasi oli Croner Series: oli mesin sesuai spesifikasi API CJ-4 atau setara untuk mesin GH5E/GH8E, oli transmisi sesuai spesifikasi untuk transmisi manual 6/9-speed atau APS2500/APS3000, oli gardan sesuai spesifikasi RSS (RSS0716/RSS0918/RSS1132), dan cairan hidraulik untuk sistem air suspension. Kapasitas dan interval penggantian tersedia di tabel Service Data.",
+      "token_est": 92
+    },
+    {
+      "chunk_id": "CRONER_SCR_001",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series (Euro IV/V)",
+      "applies_to": "Croner Series (Euro IV/V)",
+      "category": "introduction_safety",
+      "sub_category": "teknologi_scr",
+      "source_doc": "",
+      "chapter": "Chapter 1 - SCR Technology",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "driver",
+        "fleet_manager",
+        "teknisi"
+      ],
+      "keywords": [
+        "SCR",
+        "Selective Catalytic Reduction",
+        "AdBlue",
+        "DEF",
+        "Diesel Exhaust Fluid",
+        "Euro IV",
+        "Euro V",
+        "emisi NOx",
+        "ISO 22241"
+      ],
+      "language": "id",
+      "text": "Croner Series dengan standar emisi Euro IV dan V menggunakan teknologi SCR (Selective Catalytic Reduction) untuk mengurangi emisi NOx. Sistem SCR membutuhkan cairan AdBlue (DEF - Diesel Exhaust Fluid) yang harus diisi secara rutin. Jika level AdBlue rendah, sistem akan memberikan peringatan dan performa mesin dapat terbatas. Gunakan hanya AdBlue berkualitas sesuai standar ISO 22241.",
+      "token_est": 96
+    },
+    {
+      "chunk_id": "CRONER_AUDIO_001",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "accessories_audio",
+      "sub_category": "aksesori_dan_audio",
+      "source_doc": "",
+      "chapter": "Chapter 4 - Accessories and Audio",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "driver"
+      ],
+      "keywords": [
+        "audio",
+        "head unit",
+        "aksesori",
+        "panel audio",
+        "kapasitas listrik"
+      ],
+      "language": "id",
+      "text": "Croner Series dapat dilengkapi sistem audio (head unit) sebagai fitur opsional. Panel audio terletak di dashboard kabin. Penggunaan aksesori tambahan harus memperhatikan kapasitas listrik kendaraan dan tidak mengganggu sistem kontrol utama. Jangan memasang aksesori yang dapat menghalangi visibilitas pengemudi.",
+      "token_est": 77
+    },
+    {
+      "chunk_id": "CRONER_WASH_001",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "inspection_maintenance",
+      "sub_category": "pencucian_kendaraan",
+      "source_doc": "",
+      "chapter": "Chapter 6 - Washing the Vehicle",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "driver"
+      ],
+      "keywords": [
+        "pencucian kendaraan",
+        "washing",
+        "air bertekanan",
+        "komponen kelistrikan",
+        "sensor",
+        "rem setelah cuci"
+      ],
+      "language": "id",
+      "text": "Pencucian kendaraan Croner harus memperhatikan hal-hal berikut: hindari menyemprotkan air bertekanan tinggi langsung ke komponen kelistrikan, sensor, dan konektor. Tutup semua ventilasi sebelum mencuci. Gunakan produk pembersih yang sesuai untuk cat kendaraan truk. Setelah pencucian, periksa dan keringkan komponen rem untuk memastikan fungsi rem optimal.",
+      "token_est": 89
+    },
+    {
+      "chunk_id": "CRONER_TOOLS_001",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "inspection_maintenance",
+      "sub_category": "alat_bawaan",
+      "source_doc": "",
+      "chapter": "Chapter 6 - Tools",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "driver"
+      ],
+      "keywords": [
+        "toolkit",
+        "alat bawaan",
+        "kunci ban",
+        "dongkrak",
+        "peralatan dasar",
+        "tools"
+      ],
+      "language": "id",
+      "text": "Croner Series dilengkapi dengan alat-alat standar (toolkit) yang disimpan di dalam kabin atau dalam kompartemen yang ditentukan. Toolkit biasanya mencakup kunci ban, dongkrak, dan peralatan dasar lainnya. Selalu pastikan toolkit tersedia dan lengkap sebelum perjalanan jauh.",
+      "token_est": 68
+    },
+    {
+      "chunk_id": "CRONER_5W_MAINT_001",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series (versi tractor head)",
+      "applies_to": "Croner Series (versi tractor head)",
+      "category": "fifth_wheel_operation",
+      "sub_category": "perawatan_fifth_wheel",
+      "source_doc": "",
+      "chapter": "Chapter 6 - Fifth Wheel",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "teknisi"
+      ],
+      "keywords": [
+        "fifth wheel",
+        "pelana",
+        "perawatan fifth wheel",
+        "grease fifth wheel",
+        "mekanisme kunci",
+        "jaw lock"
+      ],
+      "language": "id",
+      "text": "Perawatan fifth wheel Croner meliputi: pelumasan permukaan fifth wheel secara berkala dengan grease yang direkomendasikan, pemeriksaan mekanisme kunci (jaw/lock), pemeriksaan kondisi permukaan plat fifth wheel dari keausan, dan pemeriksaan kekencangan baut mounting. Fifth wheel yang tidak dirawat dengan baik dapat mengakibatkan kecelakaan serius.",
+      "token_est": 87
+    },
+    {
+      "chunk_id": "CRONER_GEN_001",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "service_data",
+      "sub_category": "spesifikasi_umum_croner",
+      "source_doc": "",
+      "chapter": "General Specifications",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "fleet_manager",
+        "calon_pembeli",
+        "dealer"
+      ],
+      "keywords": [
+        "Croner Series",
+        "medium-heavy duty",
+        "GH5E",
+        "GH8E",
+        "6-speed",
+        "9-speed",
+        "APS2500",
+        "APS3000",
+        "leaf spring",
+        "air suspension",
+        "LHD",
+        "RHD"
+      ],
+      "language": "id",
+      "text": "UD Trucks Croner Series adalah truk medium-heavy duty yang dirancang untuk berbagai aplikasi angkutan. Tersedia dengan pilihan mesin diesel GH5E dan GH8E, transmisi manual 6-speed atau 9-speed, atau transmisi otomatis APS2500/APS3000. Varian suspensi mencakup leaf spring (RSS0716, RSS0918/RSS0918B, RSS1132B/RSS1132D) dan air suspension. Tersedia dalam konfigurasi LHD dan RHD untuk berbagai pasar.",
+      "token_est": 99
+    },
+    {
+      "chunk_id": "CRONER_OBD_002",
+      "source_file": "croner_series_rag_knowledge_base",
+      "series": "Croner Series",
+      "applies_to": "Croner Series",
+      "category": "service_data",
+      "sub_category": "data_rekaman_kendaraan",
+      "source_doc": "",
+      "chapter": "Chapter 1 - Data Recording",
+      "page": "",
+      "fault_code": null,
+      "user_role": [
+        "fleet_manager",
+        "teknisi"
+      ],
+      "keywords": [
+        "perekaman data",
+        "data kendaraan",
+        "rekaman operasional",
+        "data kesalahan",
+        "event log",
+        "garansi"
+      ],
+      "language": "id",
+      "text": "Sistem perekaman data Croner mencatat informasi operasional, kejadian, dan kesalahan kendaraan secara sementara maupun permanen. Saat kendaraan dijual, manual beserta catatan rekaman data harus tetap bersama kendaraan. Data yang tercatat dapat digunakan untuk perbaikan layanan, proses servis, pengelolaan garansi, dan jaminan kualitas oleh dealer dan produsen.",
+      "token_est": 90
     }
   ]
 }
